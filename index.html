@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зарабатывай с нами!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .hero-section {
+            width: 100%;
+            background: url('images/fon.jpeg') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            color: white;
+            padding: 50px 0;
+        }
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* затемнение фона */
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-top: 50px;
+        }
+        h2 {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: rgba(255, 165, 0, 0.8);
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+            margin-top: 20px;
+        }
+        .section {
+            width: 100%;
+            background-color: #f0f0f0;
+            padding: 50px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            flex-wrap: wrap;
+        }
+        .section img {
+            width: 48%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .section-content {
+            width: 48%;
+        }
+        .section-content h2, .section-content p {
+            color: black;
+            line-height: 2.5; /* Межстрочный интервал для текста в секции "О компании" */
+        }
+        .contacts {
+            margin: 50px 0;
+            text-align: center;
+        }
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 20px 0;
+            width: 100%;
+            text-align: center;
+        }
+        /* Медиа-запросы для адаптации под мобильные устройства */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            h1 {
+                font-size: 2em;
+                margin-top: 20px;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            .section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .section img, .section-content {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .highlight {
+                margin-top: 10px;
+                padding: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            h2 {
+                font-size: 1em;
+            }
+            .highlight {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="container hero-content">
+            <h1>Зарабатывай на продажах финансовых и страховых продуктов, а также HR-рекрутинге!</h1>
+            <h2>Работа полностью удаленная. Работать можно как физ. лицо, ИП или самозанятый.<br>Работа в личном кабинете, где можно делать расчёты, покупки и продажи финансовых (кредиты, дебетовые и кредитные карты и др.) и страховых продуктов. Представлены ведущие страховые компании и банки.<br>Комиссия по ОСАГО - до 35%.<br>Комиссия по ипотечному страхованию - до 50%.<br>Комиссия за каждый проданный фин. продукт.<br>И многое другое</h2>
+            <a href="https://pampadu.ru/agents?refs=a20986" class="highlight">Подробнее</a>
+        </div>
+    </div>
+    <div class="container section">
+        <div class="section-content">
+            <h2>О компании</h2>
+            <p>Бесплатная онлайн платформа, через которую любой желающий: агенты, брокеры, владельцы бизнеса, вебмастера и ищущие подработку, могут получать доход, продавая и оформляя страховые полисы, финансовые продукты и выполнять целевые действия, за которые компании готовы платить комиссионное вознаграждение.</p>
+            <a href="https://pampadu.ru/agents?refs=a20986" class="highlight">Узнать подробнее</a>
+        </div>
+        <div class="section-content">
+            <img src="images/car-g46895119f_1280.jpg" alt="Фото 1">
+            <img src="images/mercedes-841465_1280.jpg" alt="Фото 2">
+            <img src="images/singapore-2064905_1280.jpg" alt="Фото 3">
+            <img src="images/time-4559218_1920.jpg" alt="Фото 4">
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Стоковые фотографии: <a href="https://loon.site/" style="color: white;">https://loon.site/</a></p>
+        <p>Сапан Алексей Викторович</p>
+        <p>ИНН 502239139834</p>
+    </div>
+</body>
+</html>
